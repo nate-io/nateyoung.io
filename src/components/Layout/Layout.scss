@@ -1,0 +1,46 @@
+@import "../scss/media-queries.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.SiteGrid {
+  height: 100vh;
+  max-height: 100%;
+  display: grid;
+  // side nav takes 25%, content rest
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 48px;
+  grid-template-areas: 
+    "siteContent siteNav"
+    "siteContent siteFooter";
+
+  .SiteNav {
+    grid-area: siteNav;
+  }
+
+  .SiteContent {
+    background-color: #0f0;
+    grid-area: siteContent;
+  }
+
+  .SiteFooter {
+    background-color: #00f;
+    grid-area: siteFooter;
+  }
+}
+
+@include respond-below(xs) {
+  .SiteGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 96px auto 48px;
+    grid-template-areas: 
+    "siteNav"
+    "siteContent"
+    "siteFooter";
+  }
+}

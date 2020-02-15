@@ -102,4 +102,4 @@ public/
 .tern-port
 
 # dir holding test assets
-assets/
+test-assets/
