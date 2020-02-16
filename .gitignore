@@ -103,3 +103,6 @@ public/
 
 # dir holding test assets
 test-assets/
+
+# mac junk
+.DS_Store

@@ -13,12 +13,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
-      <div className="SiteGrid">
-        <div className="SiteNav">
+      <div className='SiteGrid'>
+        <div className='SiteNav'>
           <Nav />
         </div>
-        <div className="SiteContent">{children}</div>
-        <div className="SiteFooter">
+        <div className='SiteContent'>{children}</div>
+        <div className='SiteFooter'>
           <Footer />
         </div>
       </div>

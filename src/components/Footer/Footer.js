@@ -12,23 +12,23 @@ const links = {
 }
 
 const Footer = () => (
-  <ul className="Footer__Links">
-    <li className="Links__link">
+  <ul className='Footer__Links'>
+    <li className='Links__link'>
       <a href={links.github}>
         <GoMarkGithub />
       </a>
     </li>
-    <li className="Links__link">
+    <li className='Links__link'>
       <a href={links.linkedin}>
         <FaLinkedinIn />
       </a>
     </li>
-    <li className="Links__link">
+    <li className='Links__link'>
       <a href={links.mailTo}>
         <FaRegEnvelope />
       </a>
     </li>
-    <li className="Links__link">
+    <li className='Links__link'>
       <FaExclamation onClick={() => alert("Build modal!")} />
     </li>
   </ul>
