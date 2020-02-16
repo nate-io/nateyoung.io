@@ -1,0 +1,34 @@
+.NavMenu {
+  height: 100%; 
+
+  .NavMenu__ImageContainer {
+    text-align: center;
+    object-fit: contain;
+    padding: 25px 0;
+    
+    > img {
+      width: 150px;
+      border-radius: 50%;
+      border: 1px solid red;
+    }
+  }
+
+  .NavMenu__LinkContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding-top: 100px;
+
+    > a {
+      text-decoration: none;
+      color: #303030;
+      margin-left: 50px;
+      margin-bottom: 25px;
+      font-size: 28px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

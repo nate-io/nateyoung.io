@@ -1,0 +1,16 @@
+.Footer__Links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
+  height: 100%;
+
+  .Links__link, a {
+    color: #303030;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
