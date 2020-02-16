@@ -1,4 +1,5 @@
-@import "../scss/media-queries.scss";
+@import "../../scss/media-queries.scss";
+@import '../../scss/variables.scss';
 
 html {
   height: 100%;
@@ -13,14 +14,20 @@ body {
   max-height: 100%;
   display: grid;
   // side nav takes 25%, content rest
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.75fr 1.25fr;
   grid-template-rows: auto 48px;
   grid-template-areas: 
     "siteContent siteNav"
     "siteContent siteFooter";
 
+  background-image: url('../../images/liquid.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .SiteNav {
     grid-area: siteNav;
+    background-color: rgba(11, 12, 16, .97);
 
     > .container, .row, .col {
       height: 100%;
@@ -28,7 +35,6 @@ body {
   }
 
   .SiteContent {
-    background-color: #0f0;
     grid-area: siteContent;
   }
 

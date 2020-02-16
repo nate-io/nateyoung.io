@@ -1,34 +1,52 @@
+@import '../../scss/variables.scss';
+
 .NavMenu {
   height: 100%; 
 
   .NavMenu__ImageContainer {
     text-align: center;
     object-fit: contain;
-    padding: 25px 0;
+    padding: 50px 0;
     
     > img {
-      width: 150px;
+      width: 225px;
       border-radius: 50%;
-      border: 1px solid red;
+      animation-duration: 10s;
+      animation-name: colorize;
     }
   }
 
   .NavMenu__LinkContainer {
     display: flex;
     flex-direction: column;
-    min-height: 500px;
-    padding-top: 100px;
+    min-height: 400px;
+    padding-top: 50px;
 
     > a {
       text-decoration: none;
-      color: #303030;
-      margin-left: 50px;
-      margin-bottom: 25px;
-      font-size: 28px;
+      color: $lighter-gray;
+      margin-bottom: 3em;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 1em;
+      // ...except for last char
+      margin-right: -1em;
+      
   
       &:hover {
-        text-decoration: underline;
+        color: $accent-blue;
       }
     }
+  }
+}
+
+/*  transition image from grayscale to color */
+@keyframes colorize {
+  from {
+    filter: grayscale(100);
+  }
+
+  to {
+    filter: grayscale(0);
   }
 }

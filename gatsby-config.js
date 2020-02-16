@@ -7,10 +7,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-layout',
+      resolve: "gatsby-plugin-layout",
       options: {
-        component: require.resolve(`./src/components/Layout/Layout`)
-      }
+        component: require.resolve(`./src/components/Layout/Layout`),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,10 +43,10 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-sass',
+      resolve: "gatsby-plugin-sass",
       options: {
-        includePaths: [ 'src/scss' ]
-      }
-    }
+        includePaths: ["src/scss"],
+      },
+    },
   ],
 }
