@@ -1,3 +1,5 @@
+@import '../../scss/variables.scss';
+
 .Footer__Links {
   display: flex;
   justify-content: space-around;
@@ -7,10 +9,23 @@
   font-size: 20px;
   margin: 0;
   height: 100%;
+  background-color: $dark-gray;
 
   .Links__link, a {
-    color: #303030;
+    color: $accent-green;
     margin-bottom: 0;
     line-height: 20px;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:last-child {
+      cursor: pointer;
+      
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }

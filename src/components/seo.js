@@ -11,13 +11,13 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function getTitle() {
-  const pathTitle = window.location.pathname.split('/')[1]
+  const pathTitle = window.location.pathname.split("/")[1]
 
   if (pathTitle) {
     return `${pathTitle[0].toUpperCase()}${pathTitle.slice(1)}`
   }
 
-  return 'Home'
+  return "Home"
 }
 
 function SEO({ description, lang, meta, title }) {

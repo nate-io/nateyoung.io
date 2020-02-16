@@ -1,23 +1,38 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React from "react"
+import { Link } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
-import './NavMenu.scss'
+import profileImage from '../../images/profile.png'
+
+import "./NavMenu.scss"
+
+const activeStyleProp = { 
+  color: '#66fcf1'
+}
 
 const NavMenu = () => (
   <Container>
     <Row>
       <Col>
-        <nav className='NavMenu'>
-          <div className='NavMenu__ImageContainer'>
-            <img src='https://via.placeholder.com/150' alt='Profile of the author'/>
+        <nav className="NavMenu">
+          <div className="NavMenu__ImageContainer">
+            <img
+              src={profileImage}
+              alt="Profile of the author"
+            />
           </div>
           <div className="NavMenu__LinkContainer">
-            <Link to='/' activeStyle={{ color: 'red' }}>ABOUT</Link>
-            <Link to='/skills' activeStyle={{ color: 'green' }}>SKILLS</Link>
-            <Link to='/projects' activeStyle={{ color: 'blue' }}>PROJECTS</Link>
+            <Link to="/" activeStyle={activeStyleProp}>
+              ABOUT
+            </Link>
+            <Link to="/skills" activeStyle={activeStyleProp}>
+              SKILLS
+            </Link>
+            <Link to="/projects" activeStyle={activeStyleProp}>
+              PROJECTS
+            </Link>
           </div>
         </nav>
       </Col>

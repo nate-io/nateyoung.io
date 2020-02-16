@@ -4,4 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// credit https://alligator.io/gatsbyjs/custom-fonts-in-gatsby/#typefaces.js
+require("typeface-poppins")
+require("typeface-open-sans")
+require("typeface-fira-code")
