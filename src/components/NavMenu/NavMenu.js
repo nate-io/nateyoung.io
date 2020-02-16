@@ -10,10 +10,15 @@ const NavMenu = () => (
   <Container>
     <Row>
       <Col>
-        <nav defaultActiveKey='/' className='NavMenu'>
-          <Link to='/' activeStyle={{ color: 'red' }}>ABOUT</Link>
-          <Link to='/skills' activeStyle={{ color: 'green' }}>SKILLS</Link>
-          <Link to='/projects' activeStyle={{ color: 'blue' }}>PROJECTS</Link>
+        <nav className='NavMenu'>
+          <div className='NavMenu__ImageContainer'>
+            <img src='https://via.placeholder.com/150' alt='Profile of the author'/>
+          </div>
+          <div className="NavMenu__LinkContainer">
+            <Link to='/' activeStyle={{ color: 'red' }}>ABOUT</Link>
+            <Link to='/skills' activeStyle={{ color: 'green' }}>SKILLS</Link>
+            <Link to='/projects' activeStyle={{ color: 'blue' }}>PROJECTS</Link>
+          </div>
         </nav>
       </Col>
     </Row>
