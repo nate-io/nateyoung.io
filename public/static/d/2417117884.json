@@ -1,12 +1,1 @@
-{
-  "data": {
-    "site": {
-      "id": "Site",
-      "siteMetadata": {
-        "title": "Nate Young - Full Stack Web Developer",
-        "description": "My personal portfolio site - welcome!",
-        "author": "Nate Young"
-      }
-    }
-  }
-}
+{"data":{"site":{"id":"Site","siteMetadata":{"title":"Nate Young - Full Stack Web Developer","description":"My personal portfolio site - welcome!","author":"Nate Young"}}}}

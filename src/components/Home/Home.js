@@ -18,7 +18,6 @@ const Home = () => (
             delivering <span className='accented'>business value</span> through
             <span className='accented'> code</span>
           </h1>
-          <h2></h2>
         </Col>
       </Row>
     </Container>

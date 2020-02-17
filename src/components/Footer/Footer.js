@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types'
 
 import { FaExclamation, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa"
 import { GoMarkGithub } from "react-icons/go"
@@ -11,7 +12,7 @@ const links = {
   github: "https://github.com/nate-io",
 }
 
-const Footer = () => (
+const Footer = ({ showModal }) => (
   <ul className='Footer__Links'>
     <li className='Links__link'>
       <a href={links.github}>
@@ -29,9 +30,13 @@ const Footer = () => (
       </a>
     </li>
     <li className='Links__link'>
-      <FaExclamation onClick={() => alert("Build modal!")} />
+      <FaExclamation onClick={showModal} />
     </li>
   </ul>
 )
+
+Footer.propTypes = {
+  showModal: PropTypes.func.isRequired
+}
 
 export default Footer
