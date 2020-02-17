@@ -20,6 +20,7 @@ body {
     "siteContent siteNav"
     "siteContent siteFooter";
 
+  background-color: $dark-gray;
   background-image: url('../../images/liquid.jpeg');
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +28,7 @@ body {
 
   .SiteNav {
     grid-area: siteNav;
-    background-color: rgba(11, 12, 16, .97);
+    background-color: rgba($dark-gray, .97);
 
     > .container, .row, .col {
       height: 100%;
