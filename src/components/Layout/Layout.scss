@@ -10,7 +10,7 @@ body {
 }
 
 .SiteGrid {
-  height: 100vh;
+  min-height: 100vh;
   max-height: 100%;
   display: grid;
   // side nav takes 25%, content rest
@@ -46,11 +46,12 @@ body {
 
 @include respond-below(xs) {
   .SiteGrid {
+    background-color: $dark-gray;
     grid-template-columns: 1fr;
     grid-template-rows: 96px auto 48px;
     grid-template-areas: 
-    "siteNav"
-    "siteContent"
-    "siteFooter";
+      "siteNav"
+      "siteContent"
+      "siteFooter";
   }
 }

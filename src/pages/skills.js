@@ -1,9 +1,8 @@
 import React from "react"
+import SkillsComponent from '../components/Skills/Skills'
 
 const Skills = () => (
-  <div>
-    <h1>My Skills</h1>
-  </div>
+  <SkillsComponent />
 )
 
 export default Skills
