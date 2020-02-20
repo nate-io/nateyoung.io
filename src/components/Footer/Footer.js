@@ -8,7 +8,7 @@ import "./Footer.scss"
 
 const links = {
   mailTo: "mailto:nyoung125@gmail.com?Subject=Let's Chat",
-  linkedin: "www.linkedin.com/in/nate-io",
+  linkedin: "https://www.linkedin.com/in/nate-io",
   github: "https://github.com/nate-io",
 }
 
