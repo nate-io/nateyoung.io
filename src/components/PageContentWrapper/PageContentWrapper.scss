@@ -1,14 +1,18 @@
 @import '../../scss/variables.scss';
 
-.Home {
-  min-height: 100%;
+.PageContentWrapper {
+  height: 100vh;
   // mask root bg image
-  background-color: rgba($dark-gray, .9);
+  // background-color: rgba($dark-gray, .9);
   color: #fff;
 
-  .Home__Content {
+  .container, .col, .row {
+    height: 100%;
+  }
+
+  .PageContentWrapper__Content {
     // match middle of image & center horizontal
-    margin: 162px auto !important;
+    margin: 162px auto auto auto !important;
 
     > h1 {
       font-weight: 700;

@@ -1,0 +1,24 @@
+.Tools__Logos {
+  width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  > p {
+    font-size: 1.5rem;
+  }
+
+  .Logos__LogoRow {
+    width: 384px;
+    margin: 32px 0; 
+
+    svg {
+      width: 64px;
+      height: auto;
+    }
+
+    img { 
+      margin-bottom: 0;
+    }
+  }
+}

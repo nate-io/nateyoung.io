@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import { FaExclamation, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa"
 import { GoMarkGithub } from "react-icons/go"
@@ -36,7 +36,7 @@ const Footer = ({ showModal }) => (
 )
 
 Footer.propTypes = {
-  showModal: PropTypes.func.isRequired
+  showModal: PropTypes.func.isRequired,
 }
 
 export default Footer

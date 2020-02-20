@@ -1,0 +1,11 @@
+.Icon {
+  margin-right: 32px;
+
+  &.white {
+    color: #fff;
+
+    > svg, path {
+      fill: currentColor
+    }
+  }
+}
