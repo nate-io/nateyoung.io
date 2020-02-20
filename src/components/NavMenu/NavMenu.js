@@ -24,8 +24,8 @@ const NavMenu = () => (
             <Link to='/' activeStyle={activeStyleProp}>
               ABOUT
             </Link>
-            <Link to='/skills' activeStyle={activeStyleProp}>
-              SKILLS
+            <Link to='/tools' activeStyle={activeStyleProp}>
+              TOOLS
             </Link>
             <Link to='/work' activeStyle={activeStyleProp}>
               WORK

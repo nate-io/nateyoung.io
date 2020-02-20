@@ -1,8 +1,6 @@
 import React from "react"
-import WorkComponent from '../components/Work/Work'
+import WorkComponent from "../components/Work/Work"
 
-const Work = () => (
-  <WorkComponent />
-)
+const Work = () => <WorkComponent />
 
 export default Work

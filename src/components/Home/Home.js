@@ -1,5 +1,5 @@
 import React from "react"
-import PageContentWrapper from '../PageContentWrapper/PageContentWrapper'
+import PageContentWrapper from "../PageContentWrapper/PageContentWrapper"
 
 const Home = () => (
   <PageContentWrapper>

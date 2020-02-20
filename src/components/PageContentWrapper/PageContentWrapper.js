@@ -5,11 +5,11 @@ import Col from "react-bootstrap/Col"
 
 import "./PageContentWrapper.scss"
 
-const PageContentWrapper = (props) => {
+const PageContentWrapper = props => {
   const { children, ...otherProps } = props
 
   return (
-    <div className='PageContentWrapper' { ...otherProps }>
+    <div className='PageContentWrapper' {...otherProps}>
       <Container>
         <Row>
           <Col lg={10} className='PageContentWrapper__Content'>

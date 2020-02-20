@@ -37,6 +37,9 @@ body {
 
   .SiteContent {
     grid-area: siteContent;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba($dark-gray, .9);
   }
 
   .SiteFooter {
