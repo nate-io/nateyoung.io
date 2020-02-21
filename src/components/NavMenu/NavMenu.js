@@ -17,9 +17,13 @@ const NavMenu = () => (
     <Row>
       <Col>
         <nav className='NavMenu'>
-          <div className='NavMenu__ImageContainer'>
-            <img src={profileImage} alt='Profile of the author' />
-          </div>
+          <header className='NavMenu__ImageContainer'>
+            <h1>
+              <a href='/' title='nateyoung.io'>
+                <img src={profileImage} alt='Profile of the author' />
+              </a>
+            </h1>
+          </header>
           <div className='NavMenu__LinkContainer'>
             <Link to='/' activeStyle={activeStyleProp}>
               ABOUT

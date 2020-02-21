@@ -1,3 +1,4 @@
+@import "../../scss/media-queries.scss";
 @import '../../scss/variables.scss';
 
 .PageContentWrapper {
@@ -11,9 +12,6 @@
   }
 
   .PageContentWrapper__Content {
-    // match middle of image & center horizontal
-    margin: 162px auto auto auto !important;
-
     > h1 {
       font-weight: 700;
       margin-top: 25px;
@@ -22,5 +20,33 @@
     .accented {
       color: $accent-green;
     }
+
+    .big-text {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: 'Poppins','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
+      line-height: 60px;
+    }
+  }
+}
+
+@include respond-above(md) {
+  .PageContentWrapper__Content {
+    // match middle of image & center horizontal
+    margin: 162px auto 0 auto !important;
+  }
+}
+
+@include respond-between(xs, md) {
+  .PageContentWrapper__Content {
+    // match middle of image & center horizontal
+    margin: 162px auto 0 25px !important;
+  }
+}
+
+@include respond-below(xs) {
+  .PageContentWrapper__Content {
+    // match middle of image & center horizontal
+    margin: 25px auto !important;
   }
 }

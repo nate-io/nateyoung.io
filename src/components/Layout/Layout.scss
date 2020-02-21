@@ -51,7 +51,7 @@ body {
   .SiteGrid {
     background-color: $dark-gray;
     grid-template-columns: 1fr;
-    grid-template-rows: 96px auto 48px;
+    grid-template-rows: 120px auto 48px;
     grid-template-areas: 
       "siteNav"
       "siteContent"
