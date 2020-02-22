@@ -1,83 +1,66 @@
 @import '../../scss/media-queries.scss';
 @import '../../scss/variables.scss';
 
-.NavMenu {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.NavMenu__container {
+  &.container {
+    padding: 0;
+  }
 
-  .NavMenu__ImageContainer {
-    text-align: center;
-    object-fit: contain;
+  .navbar {
+    flex-wrap: nowrap !important;
+  }
 
-    h1 {
-      margin-bottom: 0;
+  .navbar-brand {
+    font-size: 1em;
+  }
 
-      img {
-        width: 225px;
-        border-radius: 50%;
-        animation-duration: 30s;
-        animation-name: colorize;
-      }
+  .navbar-toggler {
+    border: none;
+
+    .NavMenu__bars {
+      color: $accent-green;
     }
   }
 
-  .NavMenu__LinkContainer {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
+  .bg-slate {
+    color: #fff;
+    background-color: $dark-gray;
+  }
+}
 
-    > a {
-      text-decoration: none;
-      color: $lighter-gray;
-      margin-bottom: 3em;
-      font-size: 20px;
-      text-align: center;
-      letter-spacing: 1em;
-      // ...except for last char
-      margin-right: -1em;
-      
+// .NavMenu__ImageContainer {
+//   text-align: center;
+//   object-fit: contain;
+
+//   h1 {
+//     margin-bottom: 0;
+
+//     img {
+//       width: 225px;
+//       border-radius: 50%;
+//       animation-duration: 30s;
+//       animation-name: colorize;
+//     }
+//   }
+// }
+
+
+// a {
+//   text-decoration: none;
+//   color: $lighter-gray;
+//   margin-bottom: 3em;
+//   font-size: 20px;
+//   text-align: center;
+//   letter-spacing: 1em;
+//   // ...except for last char
+//   margin-right: -1em;
   
-      &:hover {
-        color: $accent-blue;
-      }
-    }
-  }
-}
 
-@include respond-above(md) {
-  .NavMenu__ImageContainer {
-    padding: 50px 0;
-  }
+//   &:hover {
+//     color: $accent-blue;
+//   }
+// }
 
-  .NavMenu__LinkContainer {
-    min-height: 400px;
-  }
-}
-
-@include respond-below(xs) {
-  .NavMenu {
-    flex-direction: row;
-
-    .NavMenu__ImageContainer {
-      margin: 10px auto 0 auto;
-
-      h1 {
-        width: 96px;
-
-        img {
-          width: 96px;
-          height: 96px;
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    .NavMenu__LinkContainer {
-      display: none;
-    }
-  }
-}
 
 /*  transition image from grayscale to color */
 @keyframes colorize {

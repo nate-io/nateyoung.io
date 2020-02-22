@@ -48,5 +48,11 @@ module.exports = {
         includePaths: ["src/scss"],
       },
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-158807637-1"
+      }
+    }
   ],
 }
