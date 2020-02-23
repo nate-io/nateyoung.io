@@ -3,14 +3,14 @@ import PageContentWrapper from "../PageContentWrapper/PageContentWrapper"
 
 const Home = () => (
   <PageContentWrapper>
-    <h3>
+    <h2>
       hi, i'm <span className='accented'>nate</span>
-    </h3>
-    <h1>
+    </h2>
+    <p className='big-text'>
       a <span className='accented'>full stack developer</span> focused on
       delivering <span className='accented'>business value</span> through
       <span className='accented'> code</span>
-    </h1>
+    </p>
   </PageContentWrapper>
 )
 export default Home

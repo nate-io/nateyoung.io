@@ -41,7 +41,7 @@ const LogoRow = ({ logos, rowNumber }) => {
 
 const Tools = () => (
   <PageContentWrapper>
-    <h3>tools</h3>
+    <h3 className='accented'>tools</h3>
     <p>
       my main focus is the <span className='accented'>node ecosystem</span> but
       I have worked across <span className='accented'>multiple stacks </span>{" "}
