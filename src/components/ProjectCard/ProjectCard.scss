@@ -1,0 +1,35 @@
+@import '../../scss/variables.scss';
+
+.ProjectCard {
+  width: 300px;
+  height: 250px;
+  margin-bottom: 20px;
+  border: 1px solid $accent-green;
+  overflow: scroll;
+  padding: 20px;
+  background-color: $dark-gray;
+
+  &:hover {
+    background-color: $accent-green;
+    color: $dark-gray;
+
+    > p {
+      color: $dark-gray;
+    }
+  }
+
+  > p {
+    font-size: 16px;
+  }
+
+  .ProjectCard__time {
+    font-size: 14px;
+  }
+
+  .ProjectCard__tech {
+    font-size: 14px;
+    color: $accent-green;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+}

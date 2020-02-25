@@ -1,0 +1,9 @@
+@import '../../scss/variables.scss';
+
+#CurrentWork, #PastWork {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
