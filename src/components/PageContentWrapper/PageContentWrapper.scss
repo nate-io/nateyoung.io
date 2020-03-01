@@ -31,6 +31,13 @@
   }
 }
 
+@include respond-above(lg) {
+  .PageContentWrapper__Content {
+    // match middle of image & center horizontal
+    margin: 162px 0 0 0 !important;
+  }
+}
+
 @include respond-above(md) {
   .PageContentWrapper__Content {
     // match middle of image & center horizontal

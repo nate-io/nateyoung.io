@@ -15,8 +15,8 @@ body {
   // global 
   min-width: 400px;
   display: grid;
-  // side nav takes a tad over 33%, content rest
-  grid-template-columns: 2.75fr 1.25fr;
+  // side nav takes 25%, content rest
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto 48px;
   grid-template-areas: 
     "siteContent siteNav"

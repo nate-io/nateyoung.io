@@ -6,6 +6,7 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 import './Work.scss'
 
 const Work = ({ projects }) => {
+  console.log(projects)
   const { current, past } = projects
 
   return (
