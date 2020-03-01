@@ -4,27 +4,34 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const Work = () => {
   const data = useStaticQuery(graphql`
-    query ProjectsQuery {
+    query allDataJson {
       allDataJson {
-        nodes {
-          current {
-            name
-            timePeriod
-            description
-            techStack
-          }
-          past {
-            name
-            timePeriod
-            description
-            techStack
+        edges {
+          node {
+            id
+            current {
+              name
+              title
+              timePeriod
+              description
+              techStack
+              current
+            }
+            past {
+              name
+              title
+              timePeriod
+              description
+              techStack
+              current
+            }
           }
         }
       }
     }
   `)
 
-  const targetData = data.allDataJson.nodes[0]
+  const targetData= data.allDataJson.edges[0].node
 
   return (
     <WorkComponent projects={targetData}/>

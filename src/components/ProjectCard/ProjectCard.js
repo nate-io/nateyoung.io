@@ -4,12 +4,22 @@ import PropTypes from 'prop-types'
 import './ProjectCard.scss'
 
 function ProjectCard({ project }) {
+  const {
+    timePeriod,
+    name, 
+    title,
+    description,
+    techStack
+  } = project
+
   return (
-    <div className="ProjectCard">
-      <p className='ProjectCard__time'>{project.timePeriod}</p>
-      <h4 className='ProjectCard__title'>{project.name}</h4>
-      <p className='ProjectCard__desc'>{project.description}</p>
-      <p className='ProjectCard__tech'>{project.techStack}</p>
+    <div className="ProjectCard" title={title ? title : ''}>
+      <p className='ProjectCard__time'>{timePeriod}</p>
+      <h4 className='ProjectCard__title'>
+        {name}
+      </h4>
+      <p className='ProjectCard__desc'>{description}</p>
+      <p className='ProjectCard__tech'>{techStack}</p>
     </div>
   )
 }

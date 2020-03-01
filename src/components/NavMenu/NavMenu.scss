@@ -59,19 +59,20 @@
         display: block;
       }
 
-      a {
-        text-decoration: none;
-        color: $lighter-gray;
-        margin-bottom: 3em;
-        font-size: 20px;
-        text-align: center;
-        letter-spacing: 1em;
-        // except for last char
-        margin-right: -1em;
-        
-  
-        &:hover {
-          color: $accent-blue;
+      li {
+        a {
+          text-decoration: none;
+          color: $lighter-gray;
+          margin-bottom: 3em;
+          font-size: 20px;
+          text-align: center;
+          letter-spacing: 1em;
+          // vertical alignment compensation for letter spacing
+          margin-right: -2em;   
+    
+          &:hover {
+            color: $accent-blue;
+          }
         }
       }
     }
@@ -110,6 +111,10 @@
       top: 64px;
       background-color: $dark-gray;
       border-bottom: 1px solid #fff;
+
+      a:not([aria-current='page']) {
+        color: #fff !important;
+      }
     }
   }
 }
