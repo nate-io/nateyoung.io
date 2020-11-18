@@ -1,12 +1,12 @@
 {
   "current": [
     {
-    "name": "data.cms.gov",
-    "title": "",
-    "timePeriod": "2019 - present",
-    "description": "Total rebuild of data.cms.gov, CMS' public data portal",
-    "techStack": "React, Jest, Jenkins, AWS",
-    "current": true
+      "name": "DLA",
+      "title": "Defense Logistics Agency",
+      "timePeriod": "2020 - present",
+      "description": "Big data with Hadoop",
+      "techStack": "Hadoop, PySpark",
+      "current": true
     },
     {
       "name": "Portfolio site",
@@ -18,6 +18,14 @@
     }
   ],
   "past": [
+    {
+      "name": "SemanticBits",
+      "title": "",
+      "timePeriod": "2019 - 2020",
+      "description": "Total rebuild of data.cms.gov, CMS' public data portal",
+      "techStack": "React, Jest, Jenkins, AWS",
+      "current": false
+    },
     {
       "name": "Easy Collector",
       "title": "",
