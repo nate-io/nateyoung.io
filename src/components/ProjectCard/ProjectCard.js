@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
   return (
     <div className="ProjectCard" title={title ? title : ''}>
       <p className='ProjectCard__time'>{timePeriod}</p>
-      <h4 className='ProjectCard__title'>
+      <h4 className='ProjectCard__name'>
         {name}
       </h4>
       <p className='ProjectCard__desc'>{description}</p>
