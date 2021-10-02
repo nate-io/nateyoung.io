@@ -21,7 +21,7 @@
     {
       "name": "DLA",
       "title": "Defense Logistics Agency",
-      "timePeriod": "2020 - present",
+      "timePeriod": "2020 - 2021",
       "description": "Big data with Hadoop",
       "techStack": "Hadoop, PySpark",
       "current": false
