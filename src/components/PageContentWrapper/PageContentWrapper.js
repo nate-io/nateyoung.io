@@ -6,13 +6,13 @@ import Col from "react-bootstrap/Col"
 import "./PageContentWrapper.scss"
 
 const PageContentWrapper = props => {
-  const { children, ...otherProps } = props
+  const { children, wide, ...otherProps } = props
 
   return (
     <div className='PageContentWrapper' {...otherProps}>
-      <Container>
+      <Container >
         <Row>
-          <Col lg={10} className='PageContentWrapper__Content'>
+          <Col lg={wide ? 12 : 10} className='PageContentWrapper__Content'>
             {children}
           </Col>
         </Row>

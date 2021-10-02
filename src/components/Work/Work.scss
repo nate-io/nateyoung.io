@@ -1,5 +1,10 @@
 @import '../../scss/variables.scss';
 
+h3 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 #CurrentWork, #PastWork {
   width: 100%;
   display: flex;
