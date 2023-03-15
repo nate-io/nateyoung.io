@@ -11,6 +11,8 @@
   .Logos__LogoRow {
     width: 384px;
     margin: 32px 0; 
+    display: flex;
+    justify-content: space-between;
 
     svg {
       width: 64px;

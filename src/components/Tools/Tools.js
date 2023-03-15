@@ -2,10 +2,7 @@ import React from "react"
 
 import PageContentWrapper from "../PageContentWrapper/PageContentWrapper"
 import Aws from "../../icons/Aws"
-import Css from "../../icons/Css"
 import Electron from "../../icons/Electron"
-import Heroku from "../../icons/Heroku"
-import Html from "../../icons/Html"
 import Jest from "../../icons/Jest"
 import Js from "../../icons/Js"
 import Python from "../../icons/Python"
@@ -15,16 +12,19 @@ import Node from "../../icons/Node"
 import PostGres from "../../icons/PostGres"
 import ReactLogo from "../../icons/React"
 import SqlServer from "../../icons/SqlServer"
-import Travis from "../../icons/Travis"
 import Github from "../../icons/Github"
+import GCP from "../../icons/Gcp"
+import TS from "../../icons/TS"
+import Golang from "../../icons/golang"
 
 import "./Tools.scss"
+import K8S from "../../icons/K8S"
 
 const logoRows = [
-  [Html, Css, Js, Python],
+  [Js, TS, Python, Golang],
   [Node, ReactLogo, Electron, Jest],
+  [Github, Aws, GCP, K8S],
   [MongoDb, SqlServer, PostGres, MySql],
-  [Github, Aws, Heroku, Travis],
 ]
 
 const LogoRow = ({ logos, rowNumber }) => {
@@ -33,7 +33,14 @@ const LogoRow = ({ logos, rowNumber }) => {
   return (
     <div className={`Logos__LogoRow animated ${animation}`}>
       {logos.map((Logo, i) => (
-        <Logo key={i} />
+        <div style={{
+          width: "25%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}>
+          <Logo key={i} />
+        </div>
       ))}
     </div>
   )
@@ -47,7 +54,7 @@ const Tools = () => (
       I have worked across <span className='accented'>multiple stacks </span>{" "}
       including .net, rails, and system z (i'm willing to do whatever it takes
       to get the job done). to broaden my skillset i've recently begun exploring
-      <span className='accented'> python</span>
+      <span className='accented'> golang</span>
     </p>
 
     <div className='Tools__Logos'>
