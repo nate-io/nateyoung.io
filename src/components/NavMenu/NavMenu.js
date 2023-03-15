@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { FaBars } from 'react-icons/fa'
 
-import profileImage from "../../images/profile.png"
+import profileImage from "../../images/profile.jpg"
 
 import "./NavMenu.scss"
 
