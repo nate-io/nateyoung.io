@@ -1,8 +1,8 @@
 {
   "current": [
     {
-      "name": "Stealth Startup",
-      "title": "Stealth",
+      "name": "SparkAI",
+      "title": "",
       "timePeriod": "2021 - present",
       "description": "Building the tools to help productionize AI",
       "techStack": "Node, React, Postgres, k8s, GCP",
