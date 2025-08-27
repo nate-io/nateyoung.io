@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavMenu from '../components/NavMenu/NavMenu.astro';
+import Footer from '../components/Footer/Footer.astro';
+---
+
+<BaseLayout title="Nate Young | Home">
+  <NavMenu />
+  
+  <div class="py-20">
+    <h1 class="text-5xl font-bold mb-6">Hi, I'm <span class="text-netflix-red">Nate Young</span></h1>
+    <p class="text-xl text-light-gray mb-8 max-w-2xl">
+      I'm a software engineer focused on building intuitive, responsive, and accessible web applications.
+    </p>
+    <a href="/work" class="bg-netflix-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md inline-block transition-colors">
+      See my work
+    </a>
+  </div>
+  
+  <Footer />
+</BaseLayout>
