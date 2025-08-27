@@ -2,19 +2,27 @@
 import '../styles/global.css';
 import NavMenu from '../components/NavMenu/NavMenu.astro';
 import Footer from '../components/Footer/Footer.astro';
+import ThanksModal from '../components/react/ThanksModal.jsx';
+import SEO from '../components/SEO/SEO.astro';
 
 interface Props {
   title: string;
   description?: string;
+  image?: string;
   showNav?: boolean;
   showFooter?: boolean;
+  canonicalURL?: string;
+  type?: string;
 }
 
 const { 
   title, 
   description = "Nate Young's personal website",
+  image,
   showNav = true,
-  showFooter = true
+  showFooter = true,
+  canonicalURL = Astro.url.pathname,
+  type
 } = Astro.props;
 ---
 
@@ -23,8 +31,13 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <SEO 
+      title={title}
+      description={description}
+      image={image}
+      canonicalURL={canonicalURL}
+      type={type}
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- Google Fonts for Poppins, Open Sans, and Fira Code -->
@@ -41,6 +54,24 @@ const {
       </main>
       
       {showFooter && <Footer />}
+      
+      <div id="modal-container"></div>
+      <ThanksModal client:load />
     </div>
+
+    <script>
+      // Modal management script
+      document.addEventListener('DOMContentLoaded', () => {
+        let modalOpen = false;
+        const thanksLinks = document.querySelectorAll('.open-thanks-modal');
+        
+        thanksLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.dispatchEvent(new CustomEvent('openThanksModal'));
+          });
+        });
+      });
+    </script>
   </body>
 </html>

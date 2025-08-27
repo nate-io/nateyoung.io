@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageContentWrapper from '../components/PageContentWrapper/PageContentWrapper.astro';
+
+const tools = [
+  {
+    name: "VS Code",
+    description: "My primary code editor with essential extensions for web development",
+    link: "https://code.visualstudio.com/"
+  },
+  {
+    name: "Astro",
+    description: "Modern static site generator with minimal client-side JavaScript",
+    link: "https://astro.build/"
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Utility-first CSS framework for rapid UI development",
+    link: "https://tailwindcss.com/"
+  },
+  {
+    name: "Google Cloud Platform",
+    description: "Cloud infrastructure for hosting and deploying web applications",
+    link: "https://cloud.google.com/"
+  },
+  {
+    name: "GitHub",
+    description: "Version control and collaboration platform",
+    link: "https://github.com/"
+  },
+  {
+    name: "Node.js",
+    description: "JavaScript runtime built on Chrome's V8 JavaScript engine",
+    link: "https://nodejs.org/"
+  }
+];
+---
+
+<BaseLayout title="Nate Young | Tools">
+  <PageContentWrapper>
+    <div class="py-12">
+      <h1 class="text-4xl font-bold mb-12">Tools I Use</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {tools.map(tool => (
+          <div class="bg-dark-gray rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-bold mb-2">{tool.name}</h3>
+            <p class="text-light-gray mb-4">{tool.description}</p>
+            <a 
+              href={tool.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-highlight-blue hover:underline"
+            >
+              Learn more →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </PageContentWrapper>
+</BaseLayout>
