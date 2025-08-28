@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import PageContentWrapper from "../components/PageContentWrapper.astro"
+---
+
+<BaseLayout title='Nate Young | Home'>
+  <PageContentWrapper>
+    <div class='py-20'>
+      <h1 class='text-5xl font-bold mb-6'>
+        hi, i'm <span class='text-netflix-red'>nate</span>
+      </h1>
+      <p class='text-xl text-white mb-8 max-w-2xl'>
+        an <span class='text-netflix-red'>engineering leader</span> focused on delivering
+        <span class='text-netflix-red'>business value</span> through
+        <span class='text-netflix-red'> code</span>
+      </p>
+
+      <a
+        href='/work'
+        class='bg-netflix-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md inline-block transition-colors'
+      >
+        See my work
+      </a>
+    </div>
+  </PageContentWrapper>
+</BaseLayout>

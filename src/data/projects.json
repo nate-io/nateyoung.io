@@ -4,16 +4,8 @@
       "name": "SparkAI",
       "title": "",
       "timePeriod": "2021 - present",
-      "description": "Building the tools to help productionize AI",
+      "description": "Senior EM | Scaling robotic AI/ML with resilient, low-latency cloud systems",
       "techStack": "Node, React, Postgres, k8s, GCP",
-      "current": true
-    },
-    {
-      "name": "Portfolio site",
-      "title": "",
-      "timePeriod": "2020 - present",
-      "description": "My personal space on the web",
-      "techStack": "Gatsby, AWS Route53 & Amplify",
       "current": true
     }
   ],
@@ -22,7 +14,7 @@
       "name": "DLA",
       "title": "Defense Logistics Agency",
       "timePeriod": "2020 - 2021",
-      "description": "Big data with Hadoop",
+      "description": "Technical Lead | Big data with Hadoop",
       "techStack": "Hadoop, PySpark",
       "current": false
     },
@@ -30,7 +22,7 @@
       "name": "SemanticBits",
       "title": "",
       "timePeriod": "2019 - 2020",
-      "description": "Total rebuild of data.cms.gov, CMS' public data portal",
+      "description": "Lead Engineer | Total rebuild of data.cms.gov, CMS' public data portal",
       "techStack": "React, Jest, Jenkins, AWS",
       "current": false
     },
@@ -38,32 +30,16 @@
       "name": "Easy Collector",
       "title": "",
       "timePeriod": "2018 - 2020",
-      "description": "A desktop application and associated web backend",
-      "techStack": "MERN, Electron, NeDB, Heroku, Code Signing, 3rd Party Integrations",
+      "description": "Lead Engineer | A desktop application and associated web backend",
+      "techStack": "MERN, Electron, NeDB, Heroku, Code Signing",
       "current": false
     },
     {
-      "name": "Chickery Glass",
-      "title": "",
-      "timePeriod": "2016 - 2018",
-      "description": "Custom image-centric web application",
-      "techStack": "MongoDB, Express, Pug, Node, AWS S3, Heroku, Prototyped in Rails",
-      "current": false
-    },
-    {
-      "name": "DLA",
-      "title": "Defense Logistics Agency",
-      "timePeriod": "2016 - 2019",
-      "description": "Developed web apps supporting a DoD-wide logistics system",
-      "techStack": "React, Vanilla Web, DB2, CICS(!), Web Services",
-      "current": false
-    },
-    {
-      "name": "DFAS",
-      "title": "Defense Finance and Accounting Service",
-      "timePeriod": "2014 - 2016",
-      "description": "Full lifecycle support for 12 custom LOB apps",
-      "techStack": ".NET, SQL Server, MS Access",
+      "name": "DoD",
+      "title": "Department of Defense",
+      "timePeriod": "2009 - 2019",
+      "description": "Software Engineer | Developed web apps supporting a DoD-wide logistics system",
+      "techStack": "React, Vanilla Web, DB2, CICS(!), Web Services, .NET, MS SQL Server",
       "current": false
     }
   ]
