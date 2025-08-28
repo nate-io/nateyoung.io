@@ -1,16 +1,53 @@
 ---
+const navLinks = [
+  { href: '/', text: 'Home' },
+  { href: '/work', text: 'Work' },
+  { href: '/tools', text: 'Tools' },
+  { href: '/blog', text: 'Blog' }
+];
 ---
 
-<nav class="flex justify-between items-center py-6">
-  <div>
+<nav class="py-6">
+  <div class="flex justify-between items-center">
     <a href="/" class="text-2xl font-bold text-white hover:text-netflix-red transition-colors">
       Nate Young
     </a>
+    
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-6">
+      {navLinks.map((link) => (
+        <a href={link.href} class="text-light-gray hover:text-white transition-colors">{link.text}</a>
+      ))}
+    </div>
+    
+    <!-- Mobile Navigation Toggle -->
+    <button id="mobile-menu-toggle" class="md:hidden text-light-gray hover:text-white" aria-label="Toggle Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
-  <div class="flex space-x-6">
-    <a href="/" class="text-light-gray hover:text-white transition-colors">Home</a>
-    <a href="/work" class="text-light-gray hover:text-white transition-colors">Work</a>
-    <a href="/tools" class="text-light-gray hover:text-white transition-colors">Tools</a>
-    <a href="/blog" class="text-light-gray hover:text-white transition-colors">Blog</a>
+  
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2 mt-4 border-t border-dark-gray">
+    <div class="flex flex-col space-y-4">
+      {navLinks.map((link) => (
+        <a href={link.href} class="text-light-gray hover:text-white transition-colors">{link.text}</a>
+      ))}
+    </div>
   </div>
 </nav>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuToggle && mobileMenu) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
