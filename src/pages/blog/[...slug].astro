@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content"
+
+// This function still generates the static paths so builds don't fail
+// but the actual page content will redirect to the blog index (coming soon page)
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog")
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+  }))
+}
+
+// Redirect all blog post URLs to the blog index page
+return Astro.redirect('/blog');
+---
+
+<!-- This page intentionally left empty as we're redirecting to the blog index page -->
+

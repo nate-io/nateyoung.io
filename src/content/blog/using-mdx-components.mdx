@@ -1,0 +1,58 @@
+---
+title: "Using MDX Components in Blog Posts"
+description: "Learn how to enhance your markdown content with interactive React components using MDX"
+pubDate: 2025-08-27
+author: "Nate Young"
+tags: ["astro", "mdx", "react"]
+---
+
+import CodeSnippet from "../../components/CodeSnippet.jsx"
+
+# Using MDX in Your Astro Blog
+
+MDX combines the simplicity of Markdown with the power of React components. This allows you to create rich, interactive blog content that goes beyond what traditional Markdown can offer.
+
+## Why Use MDX?
+
+Standard Markdown is great for basic content, but sometimes you need more interactive elements in your blog posts. MDX lets you import and use React components directly within your Markdown content.
+
+## Interactive Code Snippets
+
+Here's an example of using a custom React component within this MDX blog post:
+
+<CodeSnippet language="javascript">
+// This is a React component rendered within MDX
+const greeting = "Hello, MDX!";
+console.log(greeting);
+
+// Try copying this code with the button above
+function calculateSum(a, b) \{
+  return a + b ;
+}
+
+</CodeSnippet>
+
+## How to Use MDX in Astro
+
+1. Install the MDX integration
+2. Update your content configuration
+3. Create `.mdx` files in your content collection
+4. Import and use React components
+
+## Dynamic Content
+
+MDX also allows you to use JavaScript expressions directly in your content:
+
+Current year: {new Date().getFullYear()}
+
+Technologies used:
+
+<ul>
+  {["Astro", "React", "MDX", "Tailwind"].map((tech) => (
+    <li key={tech}>{tech}</li>
+  ))}
+</ul>
+
+## Conclusion
+
+MDX gives you the best of both worlds - the simplicity of Markdown with the power of React components. Try it out in your next blog post!

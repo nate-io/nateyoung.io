@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Netflix-inspired color palette */
+  --color-netflix-red: #E50914;
+  --color-dark-bg: #141414;
+  --color-dark-gray: #222222;
+  --color-medium-gray: #6D6D6E;
+  --color-light-gray: #B3B3B3;
+  --color-white: #FFFFFF;
+  --color-highlight-blue: #0071EB;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-dark-bg);
+  color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
